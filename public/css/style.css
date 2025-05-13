@@ -1,0 +1,129 @@
+@keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+/* Card com tema escuro e cor contrastante */
+.card {
+    background-color: rgba(50, 50, 60, 0.95); /* tom escuro, mas diferente do body */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: cardFadeIn 1s ease both;
+  }
+  
+  /* Animação ao aparecer */
+  @keyframes cardFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Efeito hover */
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+  }
+  
+
+
+/* Animação de fundo escuro com degradê */
+@keyframes darkGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Fundo geral do site */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #225166, #1a1a2e);
+    background-size: 400% 400%;
+    animation: darkGradient 15s ease infinite;
+    color: #e0e0e0;
+  }
+  
+  /* Títulos */
+  h1, h2, h3, h4, h5 {
+    color: #f1f1f1;
+  }
+  
+  /* Botões escuros com hover */
+  button, .btn {
+    background: linear-gradient(to right, #232526, #414345);
+    border: none;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  button:hover, .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Estilo para o rodapé */
+  footer {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  /* Tabelas com fundo translúcido */
+  table {
+    background-color: rgba(40, 40, 40, 0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    color: #ddd;
+  }
+  
+  td, th {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+  }
+  
+  /* Container */
+  .container {
+    padding: 30px;
+  }
+  
+  /* Links */
+  a {
+    color: #89CFF0;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+  
